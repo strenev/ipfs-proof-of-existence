@@ -40,3 +40,8 @@ To run the truffle tests, make sure also the IPFSProofOfExistenceTestable contra
 ```sh
 $ truffle test
 ```
+
+# Deployed instances
+
+If you want to test the dApp without running it locally, visit: https://ipfs-proof-of-existence.web.app/
+You have to be connected to the Rinkeby testnet via Metamask.
