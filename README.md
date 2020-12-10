@@ -6,21 +6,33 @@ The IPFS Proof of Existence directory is a truffle project that contains a solid
 
 When you interact with the contract you should send at least 0.001 ETH, which is the fee for storing the proof on the blockchain.
 
-# Installation
+# Building and running project locally
 
-Install the dependencies:
+Install the main dependencies:
 
 ```sh
-$ cd ipfs-proof-of-existence/client
+$ cd ipfs-proof-of-existence
+$ npm install
+```
+
+Install the front-end dependencies:
+
+```sh
+$ cd client
 $ npm install
 ```
 
 After the dependencies are installed, you should run a local ganache-cli test blockchain on port 8545.
-Then run:
+
+```sh
+$ ganache-cli -p 8545
+```
+
+Then compile and run your migrations:
 
 ```sh
 $ truffle compile
-$ truffle migrate --reset
+$ truffle migrate --reset --network development
 ```
 
 # Running a local development server
@@ -35,7 +47,7 @@ $ npm start
 
 # Testing
 
-To run the truffle tests, make sure also the IPFSProofOfExistenceTestable contract is deployed:
+To run the truffle tests, make sure you are running a local ganache-cli test blockchain on port 8545:
 
 ```sh
 $ truffle test
@@ -43,5 +55,6 @@ $ truffle test
 
 # Deployed instances
 
-If you want to test the dApp without running it locally, visit: https://ipfs-proof-of-existence.web.app/
+If you want to test the dApp without running it locally, visit: https://ipfs-proof-of-existence.web.app/.
+
 You have to be connected to the Rinkeby testnet via Metamask.

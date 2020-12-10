@@ -1,5 +1,5 @@
 const path = require("path");
-var HDWalletProvider = require("@truffle/hdwallet-provider");
+var HDWalletProvider = require("../ipfs-proof-of-existence/node_modules/@truffle/hdwallet-provider");
 // Add the deployer private key here in order to deploy the contract to Rinkeby
 var pk = "";
 

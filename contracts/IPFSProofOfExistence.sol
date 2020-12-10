@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity >=0.6.0 <0.8.0;
 pragma experimental ABIEncoderV2;
-import "../client/node_modules/@openzeppelin/contracts/utils/Pausable.sol";
-import "../client/node_modules/@openzeppelin/contracts/access/Ownable.sol";
-import "../client/node_modules/@openzeppelin/contracts/math/SafeMath.sol";
+import "../node_modules/@openzeppelin/contracts/utils/Pausable.sol";
+import "../node_modules/@openzeppelin/contracts/access/Ownable.sol";
+import "../node_modules/@openzeppelin/contracts/math/SafeMath.sol";
 
 /// @title A proof of existence contract which stores ipfs hashes, timestamps and document types
 /// @author Stanislav Trenev

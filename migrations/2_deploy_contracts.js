@@ -1,7 +1,10 @@
 var IPFSProofOfExistence = artifacts.require("./IPFSProofOfExistence.sol");
-//var IPFSProofOfExistenceTestable = artifacts.require("./IPFSProofOfExistenceTestable.sol");
+var IPFSProofOfExistenceTestable = artifacts.require("./IPFSProofOfExistenceTestable.sol");
 
-module.exports = function(deployer) {
+module.exports = function (deployer, network) {
   deployer.deploy(IPFSProofOfExistence);
-  //deployer.deploy(IPFSProofOfExistenceTestable);
+  
+  if (network === "development") {
+    deployer.deploy(IPFSProofOfExistenceTestable);
+  }
 };
