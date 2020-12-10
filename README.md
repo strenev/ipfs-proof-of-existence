@@ -11,7 +11,7 @@ When you interact with the contract you should send at least 0.001 ETH, which is
 Install the dependencies:
 
 ```sh
-$ cd ipfs-proof-of-existence
+$ cd ipfs-proof-of-existence/client
 $ npm install
 ```
 
@@ -29,7 +29,7 @@ Once the local blockchain is running and the contracts are deployed, you should 
 and navigate to http://localhost:3000/
 
 ```sh
-$ cd client
+$ cd ipfs-proof-of-existence/client
 $ npm start
 ```
 
